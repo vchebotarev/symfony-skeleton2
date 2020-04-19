@@ -5,6 +5,12 @@
     "chebur/controller-traits": {
         "version": "0.2.0"
     },
+    "chebur/daemon-command": {
+        "version": "0.0.3"
+    },
+    "chebur/memory-limit-bytes": {
+        "version": "0.0.1"
+    },
     "chebur/validator-constraints": {
         "version": "0.0.1"
     },
