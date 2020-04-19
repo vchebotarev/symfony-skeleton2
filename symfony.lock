@@ -35,6 +35,9 @@
     "csa/guzzle-stopwatch-middleware": {
         "version": "v1.0.1"
     },
+    "daverandom/exceptional-json": {
+        "version": "v1.0.4"
+    },
     "doctrine/annotations": {
         "version": "1.0",
         "recipe": {
