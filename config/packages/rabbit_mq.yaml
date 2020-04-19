@@ -1,0 +1,25 @@
+old_sound_rabbit_mq:
+    connections:
+        default:
+            url: 'amqp://%env(RABBIT_MQ_USER)%:%env(RABBIT_MQ_PASSWORD)%@%env(RABBIT_MQ_HOST)%:%env(RABBIT_MQ_PORT)%'
+            lazy: true
+            connection_timeout: 3
+            read_write_timeout: 3
+            heartbeat: 60
+    consumers:
+        test:
+            connection: default
+            exchange_options: {name: 'test_exchange', type: direct}
+            queue_options:
+                name: 'test_queue'
+            callback: App\RabbitMq\Consumer\TestConsumer
+            qos_options: {prefetch_size: 0, prefetch_count: 1, global: false}
+            graceful_max_execution:
+                timeout: 1800
+                exit_code: 10
+    producers:
+        test:
+            class: App\RabbitMq\Producer\TestProducer
+            service_alias: Marker\Infrastructure\RabbitMq\Producer\TestProducer
+            connection: default
+            exchange_options: { name: 'test_exchange', type: direct }

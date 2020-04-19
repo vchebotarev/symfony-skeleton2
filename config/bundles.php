@@ -13,4 +13,5 @@ return [
     Doctrine\Bundle\DoctrineBundle\DoctrineBundle::class => ['all' => true],
     Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle::class => ['all' => true],
     Ekino\NewRelicBundle\EkinoNewRelicBundle::class => ['all' => true],
+    OldSound\RabbitMqBundle\OldSoundRabbitMqBundle::class => ['all' => true],
 ];
