@@ -1,4 +1,7 @@
 {
+    "chebur/array-functions": {
+        "version": "1.0.1"
+    },
     "chebur/controller-traits": {
         "version": "0.2.0"
     },
