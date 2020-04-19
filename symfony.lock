@@ -8,6 +8,9 @@
     "chebur/daemon-command": {
         "version": "0.0.3"
     },
+    "chebur/doctrine-postgresql-type-json": {
+        "version": "0.0.1"
+    },
     "chebur/memory-limit-bytes": {
         "version": "0.0.1"
     },

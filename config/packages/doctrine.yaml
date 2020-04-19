@@ -7,6 +7,8 @@ doctrine:
         user: '%env(DATABASE_USER)%'
         password: '%env(DATABASE_PASSWORD)%'
         server_version: 9.6
+        types:
+            json: 'Chebur\DoctrinePostgreSQLTypeJson\JsonType'
     orm:
         auto_generate_proxy_classes: true
         naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware

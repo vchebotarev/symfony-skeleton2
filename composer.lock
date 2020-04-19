@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "db826b4bfd05bf9acb040cee41403017",
+    "content-hash": "aa3b59a4d03337be3f5355d4f555b96d",
     "packages": [
         {
             "name": "chebur/array-functions",
@@ -154,6 +154,45 @@
                 "symfony4"
             ],
             "time": "2019-10-09T11:52:32+00:00"
+        },
+        {
+            "name": "chebur/doctrine-postgresql-type-json",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vchebotarev/doctrine-postgresql-type-json.git",
+                "reference": "0b837245384d03734638febb7e7e3cceea35b589"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vchebotarev/doctrine-postgresql-type-json/zipball/0b837245384d03734638febb7e7e3cceea35b589",
+                "reference": "0b837245384d03734638febb7e7e3cceea35b589",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/dbal": "^2.6",
+                "php": "^7.1.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Chebur\\DoctrinePostgreSQLTypeJson\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vladimir Chebotarev",
+                    "email": "v.yu.chebotarev@mail.ru",
+                    "homepage": "http://github.com/vchebotarev"
+                }
+            ],
+            "description": "Doctrine json type fixing \\u0000 symbol for PostgreSQL",
+            "homepage": "https://github.com/vchebotarev",
+            "time": "2019-12-17T07:39:26+00:00"
         },
         {
             "name": "chebur/memory-limit-bytes",
