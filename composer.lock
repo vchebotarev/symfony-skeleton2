@@ -4,8 +4,52 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aa972b135c4fc18e4d69d1e72396e81b",
+    "content-hash": "666c7b219ca968e75baf37172cbe9764",
     "packages": [
+        {
+            "name": "chebur/validator-constraints",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vchebotarev/validator-constraints.git",
+                "reference": "6b257c01f4f1ecee77d9304bca4a9f70521d1308"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vchebotarev/validator-constraints/zipball/6b257c01f4f1ecee77d9304bca4a9f70521d1308",
+                "reference": "6b257c01f4f1ecee77d9304bca4a9f70521d1308",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "symfony/validator": "^3.4 || ^4.4 || ^5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Chebur\\Validator\\Constraints\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vladimir Chebotarev",
+                    "email": "v.yu.chebotarev@mail.ru",
+                    "homepage": "http://github.com/vchebotarev"
+                }
+            ],
+            "description": "Some symfony validator constraints",
+            "homepage": "https://github.com/vchebotarev",
+            "keywords": [
+                "constraint",
+                "symfony",
+                "validator"
+            ],
+            "time": "2019-11-28T12:02:25+00:00"
+        },
         {
             "name": "psr/cache",
             "version": "1.0.1",

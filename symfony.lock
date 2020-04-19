@@ -1,4 +1,7 @@
 {
+    "chebur/validator-constraints": {
+        "version": "0.0.1"
+    },
     "doctrine/inflector": {
         "version": "1.3.1"
     },
