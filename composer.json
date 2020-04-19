@@ -5,6 +5,7 @@
         "php": "^7.3.0",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "ext-json": "*",
         "chebur/array-functions": "^1.0",
         "chebur/controller-traits": "^0.2.0",
         "chebur/daemon-command": "^0.0.3",
