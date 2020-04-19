@@ -51,4 +51,21 @@ class Kernel extends BaseKernel
         $routes->import($confDir.'/{routes}/*'.self::CONFIG_EXTS, '/', 'glob');
         $routes->import($confDir.'/{routes}'.self::CONFIG_EXTS, '/', 'glob');
     }
+
+    protected function build(ContainerBuilder $container)
+    {
+        $extensions = require $this->getProjectDir().'/config/extensions.php';
+        foreach ($extensions as $class => $envs) {
+            if ($envs[$this->environment] ?? $envs['all'] ?? false) {
+                $container->registerExtension(new $class());
+            }
+        }
+
+        $compilerPasses = require $this->getProjectDir().'/config/compiler_passes.php';
+        foreach ($compilerPasses as $class => $envs) {
+            if ($envs[$this->environment] ?? $envs['all'] ?? false) {
+                $container->addCompilerPass(new $class());
+            }
+        }
+    }
 }
