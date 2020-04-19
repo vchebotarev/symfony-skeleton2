@@ -118,6 +118,19 @@
     "doctrine/reflection": {
         "version": "1.2.1"
     },
+    "ekino/newrelic-bundle": {
+        "version": "2.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "2.0",
+            "ref": "c6535bb5fa418c5180be1b5c219e277d5f5a9998"
+        },
+        "files": [
+            "./config/packages/new_relic.yaml",
+            "./config/packages/prod/new_relic.yaml"
+        ]
+    },
     "guzzlehttp/guzzle": {
         "version": "6.5.3"
     },
