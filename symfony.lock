@@ -124,7 +124,6 @@
             "./config/routes/dev/framework.yaml",
             "./config/services.yaml",
             "./public/index.php",
-            "./src/Controller/.gitignore",
             "./src/Kernel.php"
         ]
     },
