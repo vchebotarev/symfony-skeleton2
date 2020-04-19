@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "165c2d2679fcf8775ca3f94bf08e5ac1",
+    "content-hash": "18825c393bd0448c02a1f8432ac90cad",
     "packages": [
         {
             "name": "chebur/array-functions",
@@ -277,6 +277,54 @@
                 "rabbitmq"
             ],
             "time": "2020-04-08T10:46:18+00:00"
+        },
+        {
+            "name": "chebur/sitemap",
+            "version": "0.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vchebotarev/sitemap.git",
+                "reference": "f589a2b70dc39a69552d35b37d1359e4d28fd71a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vchebotarev/sitemap/zipball/f589a2b70dc39a69552d35b37d1359e4d28fd71a",
+                "reference": "f589a2b70dc39a69552d35b37d1359e4d28fd71a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "ext-simplexml": "*",
+                "php": "^7.1.3",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Chebur\\Sitemap\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vladimir Chebotarev",
+                    "email": "v.yu.chebotarev@mail.ru",
+                    "homepage": "http://github.com/vchebotarev"
+                }
+            ],
+            "description": "Object oriented sitemaps creating and xml generation",
+            "homepage": "https://github.com/vchebotarev",
+            "keywords": [
+                "Sitemap",
+                "images",
+                "sitemapIndex",
+                "videos",
+                "xml"
+            ],
+            "time": "2020-03-23T09:57:56+00:00"
         },
         {
             "name": "chebur/validator-constraints",

@@ -17,6 +17,9 @@
     "chebur/rabbitmq-consumer-decorator-newrelic": {
         "version": "0.0.1"
     },
+    "chebur/sitemap": {
+        "version": "0.0.2"
+    },
     "chebur/validator-constraints": {
         "version": "0.0.1"
     },
