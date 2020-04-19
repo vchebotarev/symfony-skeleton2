@@ -23,3 +23,18 @@ old_sound_rabbit_mq:
             service_alias: Marker\Infrastructure\RabbitMq\Producer\TestProducer
             connection: default
             exchange_options: { name: 'test_exchange', type: direct }
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    # New Relic decorators
+    rabbit.consumer.test.new_relic_decorator:
+        class: Chebur\RabbitMqConsumerDecoratorNewRelic\Consumer
+        decorates: App\RabbitMq\Consumer\TestConsumer
+        arguments:
+            - '@rabbit.consumer.test.new_relic_decorator.inner'
+            - '@Ekino\NewRelicBundle\NewRelic\NewRelicInteractorInterface'
+            - '@Ekino\NewRelicBundle\NewRelic\Config'
+            - 'rabbitmq:consumer test'

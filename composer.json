@@ -10,6 +10,7 @@
         "chebur/controller-traits": "^0.2.0",
         "chebur/daemon-command": "^0.0.3",
         "chebur/doctrine-postgresql-type-json": "^0.0.1",
+        "chebur/rabbitmq-consumer-decorator-newrelic": "^0.0.1",
         "chebur/validator-constraints": "^0.0.1",
         "csa/guzzle-bundle": "^3.2",
         "daverandom/exceptional-json": "^1.0",
