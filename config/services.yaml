@@ -16,7 +16,8 @@ services:
     App\:
         resource: '%kernel.project_dir%/src/*'
         exclude:
-            - '%kernel.project_dir%/src/{DependencyInjection,Tests,Kernel.php}'
+            - '%kernel.project_dir%/src/Kernel.php'
+            - '%kernel.project_dir%/src/**/{Dto,ValueObject,Model,Entity,Exception}/*.php'
             - '%kernel.project_dir%/src/Doctrine/{Entity,Type,Migration,Repository}/*.php'
             - '%kernel.project_dir%/src/Symfony/DependencyInjection/**/*.php'
             - '%kernel.project_dir%/src/RabbitMQ/Producer'
@@ -25,6 +26,8 @@ services:
     # as action arguments even if you don't extend any base controller class
     App\Controller\:
         resource: '%kernel.project_dir%/src/Controller'
+        exclude:
+            - '%kernel.project_dir%/src/Controller/**/{Dto}/*.php'
         tags: ['controller.service_arguments']
 
     # add more service definitions when explicit configuration is needed
