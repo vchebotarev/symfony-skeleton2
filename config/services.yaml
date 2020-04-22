@@ -20,7 +20,7 @@ services:
             - '%kernel.project_dir%/src/**/{Dto,ValueObject,Model,Entity,Exception}/*.php'
             - '%kernel.project_dir%/src/Doctrine/{Entity,Type,Migration,Repository}/*.php'
             - '%kernel.project_dir%/src/Symfony/DependencyInjection/**/*.php'
-            - '%kernel.project_dir%/src/RabbitMQ/Producer'
+            - '%kernel.project_dir%/src/RabbitMq/Producer'
 
     # controllers are imported separately to make sure services can be injected
     # as action arguments even if you don't extend any base controller class
