@@ -1,0 +1,12 @@
+{
+    "gitlab-domains": [
+        "gitlab.com",
+        "your-gitlab.com"
+    ],
+    "gitlab-token": {
+        "your-gitlab.com": "read_repository scope token from your-gitlab.com/profile/personal_access_tokens"
+    },
+    "github-oauth": {
+        "github.com": "token from https://github.com/settings/tokens/new?scopes=repo&description=composer"
+    }
+}
