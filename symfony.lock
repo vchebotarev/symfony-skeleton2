@@ -124,6 +124,9 @@
     "doctrine/reflection": {
         "version": "1.2.1"
     },
+    "doctrine/sql-formatter": {
+        "version": "1.1.0"
+    },
     "ekino/newrelic-bundle": {
         "version": "2.0",
         "recipe": {
@@ -184,9 +187,6 @@
     },
     "hoa/zformat": {
         "version": "1.17.01.10"
-    },
-    "jdorn/sql-formatter": {
-        "version": "v1.2.17"
     },
     "jms/metadata": {
         "version": "2.1.0"
