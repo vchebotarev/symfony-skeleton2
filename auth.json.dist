@@ -9,4 +9,10 @@
     "github-oauth": {
         "github.com": "token from https://github.com/settings/tokens/new?scopes=repo&description=composer"
     }
+    "http-basic": {
+        "github.com": {
+            "username": "github username",
+            "password": "token from https://github.com/settings/tokens/new?scopes=repo&description=composer like ghp_[YOUR-PERSONAL-TOKEN]"
+        }
+    }
 }
